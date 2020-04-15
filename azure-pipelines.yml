@@ -15,7 +15,7 @@ jobs:
         deploy:
           steps:
           - script: echo my first deployment
-  steps:
+steps:
   - task: Maven@3
     displayName: 'Maven Package'
     inputs:
