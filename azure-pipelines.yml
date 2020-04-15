@@ -1,7 +1,8 @@
 pool:
   vmImage: 'ubuntu-18.04'
   displayName: Build Maven Project
-     jobs:
+
+jobs:
 - deployment: VMDeploy
   displayName: web
   pool:
