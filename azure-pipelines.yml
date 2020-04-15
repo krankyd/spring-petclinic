@@ -1,8 +1,6 @@
 jobs:
 - deployment: VMDeploy
   displayName: web
-  pool:
-    vmImage: 'pipeline-test-01'
   environment:
     name: pipeline-test-01
     resourceType: VirtualMachine
