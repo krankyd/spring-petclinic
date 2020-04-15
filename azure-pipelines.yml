@@ -8,7 +8,7 @@ jobs:
   pool:
     vmImage: 'Ubuntu-16.04'
   environment:
-    name: <environment name>
+    name: pipeline-test-01
     resourceType: VirtualMachine
   strategy:
       runOnce:
