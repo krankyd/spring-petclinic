@@ -15,7 +15,9 @@ jobs:
         deploy:
           steps:
           - script: echo my first deployment
-steps:
+- job: Build
+  displayName: Build Maven Project
+  steps:
   - task: Maven@3
     displayName: 'Maven Package'
     inputs:
@@ -28,4 +30,3 @@ steps:
       TargetFolder: $(Build.ArtifactStagingDirectory)
   - upload: $(Build.ArtifactStagingDirectory)
     artifact: drop
- 
